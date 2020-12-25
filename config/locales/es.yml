@@ -1,0 +1,9 @@
+---
+es:
+  hello: Hello world
+
+  common:
+    show: Ver
+    edit: Editar
+    new: Nuevo
+    destroy: Eliminar

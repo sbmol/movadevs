@@ -1,0 +1,42 @@
+<p id="notice"><%= notice %></p>
+<% total_value = 0 %>
+
+<p>
+  <strong>Bookday:</strong>
+  <%= @book.bookday %>
+</p>
+
+<p>
+  <strong>Qadult:</strong>
+  <%= @book.qadult %>
+</p>
+
+<p>
+  <strong>Qchild:</strong>
+  <%= @book.qchild %>
+</p>
+
+<p>
+  <strong>Event:</strong>
+  <%= @book.event.name %>
+</p>
+<p>
+  <strong>code:</strong>
+  <%= @book.code %>
+</p>
+
+<p>
+  <strong>total child</strong>
+
+  $<%= @book.totalchild %>
+  </p>
+  <p>
+    <strong>Total adult</strong>
+    $<%= @book.totaladult %>
+  </p>
+  <p>
+    <strong>Total Final</strong>
+    $<%= @book.totalfinal %>
+  </p>
+<%= link_to 'Edit', edit_book_path(@book) %> |
+<%= link_to 'Back', books_path %>

@@ -1,0 +1,13 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  bookday: 2020-12-23 18:48:43
+  qadult: 1
+  qchild: 1
+  event: one
+
+two:
+  bookday: 2020-12-23 18:48:43
+  qadult: 1
+  qchild: 1
+  event: two
