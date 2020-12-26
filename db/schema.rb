@@ -12,11 +12,14 @@
 
 ActiveRecord::Schema.define(version: 2020_12_25_202813) do
 
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
   create_table "books", force: :cascade do |t|
     t.datetime "bookday"
     t.integer "qadult"
     t.integer "qchild"
-    t.integer "event_id", null: false
+    t.bigint "event_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.string "code"
